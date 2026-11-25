@@ -1,0 +1,36 @@
+{
+  "name": "dsh-yu-memory",
+  "version": "0.2.0",
+  "private": false,
+  "description": "DSH 插件：把一套 Markdown 记忆库接上去。包内自带五条命令行链（召回、写片、分主簇、重建索引、算星图），库根走配置或环境变量，不写死任何本机路径。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL-AI.md",
+    "LICENSE",
+    "lib/"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "markdown",
+    "recall"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {}
+}
